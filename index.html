@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Fácil Host</title>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&family=Roboto:wght@400;500&display=swap"
+    rel="stylesheet">
+  <style>
+    body {
+      font-family: 'Poppins', sans-serif;
+      background: linear-gradient(to right, #ff9900, #ff9900);
+      color: #333;
+    }
+
+    .container {
+      background: #fff;
+      padding: 40px;
+      border-radius: 15px;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+      max-width: 1200px;
+      margin: auto;
+    }
+
+    .fh-logo {
+      font-size: 4.5em;
+      color: #ff8c00;
+      text-align: center;
+      margin-bottom: 10px;
+    }
+
+    .promocao {
+      background: #ff8c00;
+      padding: 20px;
+      border-radius: 10px;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+      color: #fff;
+      text-align: center;
+      margin-bottom: 30px;
+      font-weight: bold;
+    }
+
+    .planos {
+      display: flex;
+      justify-content: space-between;
+      flex-wrap: wrap;
+      gap: 20px;
+    }
+
+    .plano {
+      background: #fff;
+      padding: 20px;
+      border-radius: 15px;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+      text-align: center;
+      flex: 1 1 calc(33.333% - 20px);
+      margin: 10px;
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+
+    .plano:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+    }
+
+    .preco {
+      font-size: 2em;
+      font-weight: bold;
+      color: #ff8c00;
+      margin-bottom: 10px;
+    }
+
+    .botao {
+      background-color: #ff8c00;
+      color: #fff;
+      padding: 12px 25px;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+      transition: background-color 0.3s ease, transform 0.3s ease;
+      margin: 5px;
+    }
+
+    .botao:hover {
+      background-color: #e67e22;
+      transform: scale(1.05);
+    }
+
+    .footer {
+      background: #f1970f;
+      padding: 20px;
+      text-align: center;
+      color: #fff;
+      border-top: 1px solid #ffb74d;
+      margin-top: 30px;
+    }
+
+    @media (max-width: 768px) {
+      .plano {
+        flex: 1 1 100%;
+      }
+    }
+
+    .input-group {
+      margin: 20px 0;
+    }
+  </style>
+</head>
+
+<body>
+  <div class="container">
+    <div class="text-center">
+      <h1 class="fh-logo">Fácil Host</h1>
+      <h2 class="promocao">SUPER PROMOÇÃO</h2>
+      <p>Custo mensal para assinatura deste plano com pagamento anual. Os recursos não podem ultrapassar o espaço
+        contratado:</p>
+      <p>10 GB Espaço, 100 GB Tráfego mensal, E-mail ilimitados*, Banco de dados Multilimitados*, PHP, Fantastico e
+        compatível com Joomla</p>
+    </div>
+
+    <h3 class="text-center">Escolha um Domínio:</h3>
+    <form class="form-inline justify-content-center input-group">
+      <input type="text" class="form-control mx-2" id="dominio" placeholder="www." aria-label="Nome do domínio">
+      <select class="form-control mx-2" aria-label="Extensão do domínio">
+        <option value=".com">.com</option>
+        <option value=".net">.net</option>
+        <option value=".org">.org</option>
+        <option value=".br">.br</option>
+      </select>
+      <button type="submit" class="btn btn-primary">Ok</button>
+    </form>
+
+    <h2 class="text-center my-4">Nossos Planos</h2>
+    <div class="planos">
+      <div class="plano">
+        <h3>FH 1000</h3>
+        <p>1000 MB espaço</p>
+        <p>10 GB tráfego mensal</p>
+        <p class="preco">R$ 10,00</p>
+        <button class="botao">Detalhes</button>
+        <button class="botao">Contratar Já</button>
+      </div>
+      <div class="plano">
+        <h3>FH 3000</h3>
+        <p>3000 MB espaço</p>
+        <p>30 GB tráfego mensal</p>
+        <p class="preco">R$ 20,00</p>
+        <button class="botao">Detalhes</button>
+        <button class="botao">Contratar Já</button>
+      </div>
+      <div class="plano">
+        <h3>FH 5000</h3>
+        <p>5000 MB espaço</p>
+        <p>100 GB tráfego mensal</p>
+        <p class="preco">R$ 45,00</p>
+        <button class="botao">Detalhes</button>
+        <button class="botao">Contratar Já</button>
+      </div>
+    </div>
+
+    <h2 class="text-center my-4">Revenda</h2>
+    <div class="planos">
+      <div class="plano">
+        <h3>Revenda 1</h3>
+        <p>2 GB espaço</p>
+        <p>20 GB tráfego mensal</p>
+        <p class="preco">R$ 46,00</p>
+        <button class="botao">Detalhes</button>
+        <button class="botao">Contratar Já</button>
+      </div>
+      <div class="plano">
+        <h3>Revenda 2</h3>
+        <p>3 GB espaço</p>
+        <p>40 GB tráfego mensal</p>
+        <p class="preco">R$ 76,00</p>
+        <button class="botao">Detalhes</button>
+        <button class="botao">Contratar Já</button>
+      </div>
+    </div>
+
+    <div class="footer">
+      <p>© 2024 Fácil Host. Todos os direitos reservados.</p>
+      <p>
+        <a href="#" style="color: #fff; margin-right: 10px;">Facebook</a>
+        <a href="#" style="color: #fff;">Instagram</a>
+      </p>
+    </div>
+  </div>
+</body>
+
+</html>
